@@ -50,16 +50,9 @@
   }
 <section class="bg-gradient header-branding">
   <section class="container">
-    @@if (site === 'mew' ) {
-      <a class="brand" href="/" aria-label="Go to homepage">
-        <h1>MyEllaWallet</h1>
-      </a>
-    }
-    @@if (site === 'cx'  ) {
-      <a class="brand" href="/cx-wallet.html" aria-label="Go to homepage">
-	<h1>MyEllaWallet</h1>
-      </a>
-    }
+    <a class="brand" href="/ellawallet/" aria-label="Go to homepage">
+      <h1>MyEllaWallet</h1>
+    </a>
     <div class="tagline">
 
     <span>3.10.4.7</span>
