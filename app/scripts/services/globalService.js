@@ -38,7 +38,7 @@ var tabs = {
     id: 4,
     name: "NAV_Swap",
     url: "swap",
-    mew: true,
+    mew: false,
     cx: true
   },
   offlineTransaction: {
