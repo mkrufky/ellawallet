@@ -239,8 +239,8 @@
         <span class="mono small">{{twallet.addr}}</span>
       </td>
       <td width="500" class="chrome-tokens">
-        <h3 class="text-success point" ng-show="!showLongBal" ng-dblclick="showLongBal=!showLongBal" title="{{twallet.balance}} (Double-Click)" >{{twallet.balance|number}} ETH</h3>
-        <h3 class="text-success point" ng-show="showLongBal" ng-dblclick="showLongBal=!showLongBal">{{twallet.balance }} ETH</h3>
+        <h3 class="text-success point" ng-show="!showLongBal" ng-dblclick="showLongBal=!showLongBal" title="{{twallet.balance}} (Double-Click)" >{{twallet.balance|number}} ELLA</h3>
+        <h3 class="text-success point" ng-show="showLongBal" ng-dblclick="showLongBal=!showLongBal">{{twallet.balance }} ELLA</h3>
         <span class="point" ng-repeat="token in twallet.tokens" ng-show="token.balance!=0 && token.balance!='loading'" ng-dblclick="showLongToken=!showLongToken" title="{{token.getBalance()}} (Double-Click)">
           <strong ng-show="!showLongToken">{{token.getBalance()|number}} </strong>
           <strong ng-show="showLongToken"> {{token.getBalance()}} </strong>
@@ -268,8 +268,8 @@
           <span class="mono small"> {{twallet.addr}} </span>
         </td>
         <td class="chrome-tokens">
-          <h3 class="text-success point" ng-show="!showLongBal" ng-dblclick="showLongBal=!showLongBal" title="{{twallet.balance}} (Double-Click)" >{{twallet.balance|number}} ETH</h3>
-          <h3 class="text-success point" ng-show="showLongBal" ng-dblclick="showLongBal=!showLongBal">{{twallet.balance }} ETH</h3>
+          <h3 class="text-success point" ng-show="!showLongBal" ng-dblclick="showLongBal=!showLongBal" title="{{twallet.balance}} (Double-Click)" >{{twallet.balance|number}} ELLA</h3>
+          <h3 class="text-success point" ng-show="showLongBal" ng-dblclick="showLongBal=!showLongBal">{{twallet.balance }} ELLA</h3>
 
           <span class="point" ng-repeat="token in twallet.tokens" ng-show="token.balance!=0 && token.balance!='loading'" ng-dblclick="showLongToken=!showLongToken" title="{{token.getBalance()}} (Double-Click)">
             <strong ng-show="!showLongToken">{{token.getBalance()|number}} </strong>
@@ -595,7 +595,7 @@
       </ul>
       <h5 translate="sidebar_AccountBal">Account Balance:</h5>
       <ul class="account-info">
-        <li><strong>{{etherBalance}}</strong> ETH </li>
+        <li><strong>{{etherBalance}}</strong> ELLA </li>
       </ul>
       <h5 translate="sidebar_Equiv"> Equivalent Values: </h5>
       <ul class="account-info">
