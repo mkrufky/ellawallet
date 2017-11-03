@@ -39,7 +39,7 @@ var tabs = {
     name: "NAV_Swap",
     url: "swap",
     mew: false,
-    cx: true
+    cx: false
   },
   offlineTransaction: {
     id: 5,
@@ -100,5 +100,3 @@ return {
 };
 };
 module.exports = globalService;
-
-
