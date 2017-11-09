@@ -350,7 +350,7 @@
             Select HD derivation path:
           </h4>
 
-          <p class="alert alert-danger" ng-hide="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'"> We do not know the correct path for this network. <a href="https://github.com/kvhnuke/etherwallet/issues" target="_blank" rel="noopener">Please open a github issue</a> so we can discuss / be enlightened.</p>
+          <p class="alert alert-danger" ng-hide="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'||ajaxReq.type=='ELLA'"> We do not know the correct path for this network. <a href="https://github.com/kvhnuke/etherwallet/issues" target="_blank" rel="noopener">Please open a github issue</a> so we can discuss / be enlightened.</p>
           <section class="row">
 
             <div class="col-sm-4">
@@ -443,13 +443,13 @@
 
             <div class="col-sm-4">
               <label class="radio small">
-                <input aria-describedby="Path: TREZOR (ETC) {{HDWallet.hwExpansePath}}"
+                <input aria-describedby="Path: TREZOR (ELLA) {{HDWallet.hwEllaismPath}}"
                        ng-change="onHDDPathChange()"
                        ng-model="HDWallet.dPath"
                        type="radio"
-                      value="{{HDWallet.hwExpansePath}}"/>
-                <span ng-bind="HDWallet.hwExpansePath"></span>
-                <p class="small">Network: Expanse</p>
+                      value="{{HDWallet.hwEllaismPath}}"/>
+                <span ng-bind="HDWallet.hwEllaismPath"></span>
+                <p class="small">Network: Ellaism</p>
               </label>
             </div>
           </section>
