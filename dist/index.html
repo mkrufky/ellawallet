@@ -2605,7 +2605,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
 
     <div ng-show="!wd">
       <p translate="VIEWWALLET_Subtitle">
-        This page allows you to download different versions of private keys and re-print your paper wallet. You may want to do this in order to [import your account into Geth/Mist](http://ethereum.stackexchange.com/questions/465/how-to-import-a-plain-private-key-into-geth/). If you want to check your balance, we recommend using a blockchain explorer like <a href="http://etherscan.io/" target="_blank" rel="noopener">etherscan.io</a>.
+        This page allows you to download different versions of private keys and re-print your paper wallet. You may want to do this in order to [import your account into Geth/Mist](http://ethereum.stackexchange.com/questions/465/how-to-import-a-plain-private-key-into-geth/). If you want to check your balance, we recommend using a blockchain explorer like <a href="http://explorer.ellaism.org/" target="_blank" rel="noopener">explorer.ellaism.org</a>.
       </p>
       <wallet-decrypt-drtv></wallet-decrypt-drtv>
     </div>
@@ -2731,7 +2731,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
 
     <div class="cont-md" ng-show="txInfo.status == txStatus.mined">
       <h3 class="text-success" translate="tx_FoundOnChain"> Transaction Found </h3>
-      <h5> <a href="https://etherscan.io/tx/{{ tx.hash }}" target="_blank" rel="noopener"> {{ tx.hash }} </a> </h5>
+      <h5> <a href="https://explorer.ellaism.org/tx/{{ tx.hash }}" target="_blank" rel="noopener"> {{ tx.hash }} </a> </h5>
       <p><strong translate="tx_FoundOnChain_1"></strong></p>
       <ul>
         <li translate="tx_FoundOnChain_2"></li>
@@ -2765,15 +2765,15 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
       <tbody>
         <tr>
           <td translate="x_TxHash">TX Hash</td>
-          <td><a href="https://explorer.ellaism.org/#/transaction/{{ txInfo.hash }}" target="_blank" rel="noopener"> {{ txInfo.hash }} </a></td>
+          <td><a href="https://explorer.ellaism.org/tx/{{ txInfo.hash }}" target="_blank" rel="noopener"> {{ txInfo.hash }} </a></td>
         </tr>
         <tr>
           <td translate="OFFLINE_Step1_Label_1">From Address</td>
-          <td><a href="https://explorer.ellaism.org/#/address/{{ txInfo.from }}" target="_blank" rel="noopener"> {{ txInfo.from }} </a></td>
+          <td><a href="https://explorer.ellaism.org/addr/{{ txInfo.from }}" target="_blank" rel="noopener"> {{ txInfo.from }} </a></td>
         </tr>
         <tr>
           <td translate="OFFLINE_Step2_Label_1">To Address</td>
-          <td><a href="https://explorer.ellaism.org/#/address/{{ txInfo.to }}" target="_blank" rel="noopener"> {{ txInfo.to }} </a></td>
+          <td><a href="https://explorer.ellaism.org/addr/{{ txInfo.to }}" target="_blank" rel="noopener"> {{ txInfo.to }} </a></td>
         </tr>
         <tr>
           <td translate="SEND_amount_short">Amount</td>
