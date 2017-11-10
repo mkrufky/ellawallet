@@ -32,8 +32,8 @@ nodes.customNodeObj = {
 nodes.nodeList = {
     'ella': {
 	'name': 'ELLA',
-	'blockExplorerTX': 'https://explorer.ellaism.org/#/transaction/[[txHash]]',
-	'blockExplorerAddr': 'https://explorer.ellaism.org/#/address/[[address]]',
+	'blockExplorerTX': 'https://explorer.ellaism.org/tx/[[txHash]]',
+	'blockExplorerAddr': 'https://explorer.ellaism.org/addr/[[address]]',
 	'type': nodes.nodeTypes.ELLA,
 	'eip155': true,
 	'chainId': 64,
