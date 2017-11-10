@@ -122,7 +122,7 @@
             <span translate="x_TXFee">TX Fee</span>
           </td>
           <td>
-            ({{ txFee.eth }} ETH)
+            ({{ txFee.eth }} ELLA)
             <small>({{ txFee.usd }} USD)</small>
           </td>
         </tr>
