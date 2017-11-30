@@ -35,11 +35,6 @@
           {{ajaxReq.type}} ({{ajaxReq.blockExplorerTX.replace('/tx/[[txHash]]', '')}})
         </a>
       </li>
-      <li>
-        <a href="https://ethplorer.io/address/{{wallet.getAddressString()}}" target="_blank" rel="noopener">
-          Tokens (Ethplorer.io)
-        </a>
-      </li>
     </ul>
   </div>
 
@@ -103,7 +98,7 @@
 
   <div class="block token-balances">
     <h5 translate="sidebar_TokenBal">Token Balances</h5>
-    <p class="text-danger" ng-hide="tokensLoaded"><small> Ahh! There are too many tokens for our poor nodes! Click "Load Token Balances" to see them all. You are limited to loading these once per minute. Try checking your balance on <span ng-show="ajaxReq.type != 'CUS'"><a href="{{ajaxReq.blockExplorerAddr.replace('[[address]]', wallet.getAddressString())}}" target="_blank" rel="noopener">{{ajaxReq.blockExplorerTX.replace('/tx/[[txHash]]', '')}}</a></span> or <a href="https://ethplorer.io/address/{{wallet.getAddressString()}}" target="_blank" rel="noopener">Ethplorer.io</a> instead. </small></p>
+    <p class="text-danger" ng-hide="tokensLoaded"><small> Ahh! There are too many tokens for our poor nodes! Click "Load Token Balances" to see them all. You are limited to loading these once per minute. Try checking your balance on <span ng-show="ajaxReq.type != 'CUS'"><a href="{{ajaxReq.blockExplorerAddr.replace('[[address]]', wallet.getAddressString())}}" target="_blank" rel="noopener">{{ajaxReq.blockExplorerTX.replace('/tx/[[txHash]]', '')}}</a></span> instead. </small></p>
     <table class="account-info">
       <tr ng-repeat="token in wallet.tokenObjs track by $index"
           ng-show="token.balance!=0 && token.balance!='loading' || token.type!=='default' || tokenVisibility=='shown'">
