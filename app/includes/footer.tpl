@@ -23,7 +23,7 @@
 
       <p ng-show="showBlocks">Latest Block#: {{currentBlockNumber}} </p>
 
-      <p> &copy; 2017 Ellaism Project </p>
+      <p> &copy; 2018 Ellaism Project </p>
 
     </section>
 
