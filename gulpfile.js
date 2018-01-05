@@ -320,62 +320,6 @@ gulp.task('travisZip', ['getVersion'], function() {
         .pipe(notify(onSuccess('Zip CX ' + versionNum)))
 });
 
-
-// add all
-gulp.task('add', function() {
-    return gulp.src('*.js', { read: false })
-        .pipe(shell([
-            'git add -A'
-        ]))
-        //.pipe( notify ( onSuccess('Git Add' ) ))
-});
-
-// commit with current v# in manifest
-gulp.task('commit', ['getVersion'], function() {
-    return gulp.src('*.js', { read: false })
-        .pipe(shell([
-            'git commit -m "Rebuilt and cleaned everything. Done for now."'
-        ]))
-        .pipe(notify(onSuccess('Commit')))
-});
-
-// commit with current v# in manifest
-gulp.task('commitV', ['getVersion'], function() {
-    return gulp.src('*.js', { read: false })
-        .pipe(shell([
-            'git commit -m " ' + versionMsg + ' "'
-        ]))
-        .pipe(notify(onSuccess('Commit w ' + versionMsg)))
-});
-
-// tag with current v# in manifest
-gulp.task('tag', ['getVersion'], function() {
-    return gulp.src('*.js', { read: false })
-        .pipe(shell([
-            'git tag -a ' + versionNum + ' -m " ' + versionMsg + '"'
-        ]))
-        .pipe(notify(onSuccess('Tagged Commit' + versionMsg)))
-});
-
-// Push Release to Mercury
-gulp.task('push', ['getVersion'], function() {
-    return gulp.src('*.js', { read: false })
-        .pipe(shell([
-            'git push origin mercury ' + versionNum
-        ]))
-        .pipe(notify(onSuccess('Push')))
-});
-
-// Push Live
-// Pushes dist folder to gh-pages branch
-gulp.task('pushlive', ['getVersion'], function() {
-    return gulp.src('*.js', { read: false })
-        .pipe(shell([
-            'git subtree push --prefix dist origin gh-pages'
-        ]))
-        .pipe(notify(onSuccess('Push Live')))
-});
-
 // Prep & Release
 // gulp prep
 // gulp bump   or gulp zipit
@@ -402,8 +346,6 @@ gulp.task('prep',   function(cb) { runSequence('js-production', 'html', 'styles'
 gulp.task('bump',   function(cb) { runSequence('bump-patch', 'clean', 'zip', cb);              });
 
 gulp.task('zipit',  function(cb) { runSequence('clean', 'zip', cb);                            });
-
-gulp.task('commit', function(cb) { runSequence('add', 'commitV', 'tag', cb);                   });
 
 gulp.task('watch',     ['watchJS',     'watchLess', 'watchPAGES', 'watchTPL', 'watchCX'])
 gulp.task('watchProd', ['watchJSProd', 'watchLess', 'watchPAGES', 'watchTPL', 'watchCX'])
