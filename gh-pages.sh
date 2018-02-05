@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 git add -f ./dist
 TREE_OBJ_ID=`git write-tree --prefix=dist`
 git reset -- ./dist
