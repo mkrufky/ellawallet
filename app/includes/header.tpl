@@ -18,7 +18,7 @@
 <meta name="apple-mobile-web-app-title" content="MyEtherWallet &middot; Your Key to Ethereum">
 <meta name="application-name" content="MyEtherWallet">
 <meta name="msapplication-config" content="images/fav/browserconfig.xml">
-<meta name="theme-color" content="#1d6986">
+<meta name="theme-color" content="#396a28">
 <meta name="google-site-verification" content="IpChQ00NYUQuNs_7Xs6xlnSdzalOlTUYbBsr8f7OpvM" />
 <meta property="og:url" content="https://ellaism.github.io/ellawallet" />
 <meta property="og:title" content="MyEllaWallet  &middot; Your Key to Ethereum" />
@@ -52,7 +52,7 @@
 <section class="bg-gradient header-branding">
   <section class="container">
     <a class="brand" href="/ellawallet/" aria-label="Go to homepage">
-      <h1>MyEllaWallet</h1>
+      <img src="images/logo-myellawallet.png" height="64px" width="245px" alt="MyEllaWallet" />
     </a>
     <div class="tagline">
 

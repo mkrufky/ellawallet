@@ -1,7 +1,15 @@
 // Colors
-@ether-navy                                  : #163151;
-@ether-navy-dark                             : #102138;
-@ether-blue                                  : #0e97c0;
+@ether-navy                                  : #396A28;
+@ether-navy-dark                             : #002E00;
+@ether-blue                                  : #69B842;
+
+@ella-base-dark                              : #002E00;
+@ella-base                                   : #396A28;
+@ella-green                                  : #69B842;
+@ella-green-light                            : #AFD468;
+@ella-yellow                                 : #BFDB68;
+@ella-orangered                              : #ff602e;
+@ella-red                                    : #ff3020;
 
 @gray-base                                   : #000;
 @gray-darker                                 : lighten(@gray-base, 13.5%);
@@ -11,18 +19,19 @@
 @gray-lighter                                : #ECECEC;
 @gray-lightest                               : #FAFAFA;
 
-@brand-primary                               : @ether-blue;
+@brand-primary                               : @ella-green;
 @brand-success                               : #5dba5a;
-@brand-info                                  : @ether-navy;
+@brand-info                                  : @ella-base;
 @brand-warning                               : #ff9800;
-@brand-orangered                             : #ff5722;
-@brand-danger                                : #ea4b40;
+@brand-orangered                             : @ella-orangered;
+@brand-red                                   : @ella-red;
+@brand-danger                                : darken(@ella-orangered , 12%);
 
 @body-bg                                     : #fbfbfb;
 @text-color                                  : @gray-dark;
 
 @link-color                                  : @brand-primary;
-@link-hover-color                            : darken(@link-color, 5%);
+@link-hover-color                            : darken(@link-color, 10%);
 @link-hover-decoration                       : none;
 
 // Typography
@@ -164,8 +173,8 @@
 @dropdown-border                             : rgba(0,0,0,.15);
 @dropdown-fallback-border                    : @gray-lighter;
 @dropdown-divider-bg                         : #e5e5e5;
-@dropdown-link-color                         : @ether-navy;
-@dropdown-link-hover-color                   : @ether-blue;
+@dropdown-link-color                         : @ella-base;
+@dropdown-link-hover-color                   : @ella-green;
 @dropdown-link-hover-bg                      : @gray-lightest;
 @dropdown-link-active-color                  : @component-active-color;
 @dropdown-link-active-bg                     : @component-active-bg;
