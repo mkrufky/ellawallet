@@ -53,7 +53,6 @@
   <section class="container">
     <a class="brand" href="/ellawallet/" aria-label="Go to homepage">
       <img src="images/logo-myellawallet.png" height="64px" width="245px" alt="MyEllaWallet" />
-<!--      <h1>MyEllaWallet</h1>  -->
     </a>
     <div class="tagline">
 
