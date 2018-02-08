@@ -32,10 +32,10 @@
         <h5><i aria-hidden="true">💝</i> Donations are always appreciated!</h5>
         <p>Check out Ellaism donation addresses <a href="http://ellaism.org/donations/" target="_blank">here</a>.</p>
         <p>Dev Fund: <span class="mono wrap">
-          <a href="https://explorer.ellaism.org/addr/0x00522e276908428C02457d8a8747b9aA0AB52570">0x00522e276908428C02457d8a8747b9aA0AB52570</a>
+          <a href="https://explorer.ellaism.org/addr/0xe9C2d958E6234c862b4AfBD75b2fd241E9556303" target="_blank">0xe9C2d958E6234c862b4AfBD75b2fd241E9556303</a>
         </span></p>
         <p>Community Fund: <span class="mono wrap">
-          <a href="https://explorer.ellaism.org/addr/0x46739B691C011530AAf480AAcd339C206a2046E6">0x46739B691C011530AAf480AAcd339C206a2046E6</a>
+          <a href="https://explorer.ellaism.org/addr/0xA2C7779077Edc618C926AB5BA7510877C187cd92" target="_blank">0xA2C7779077Edc618C926AB5BA7510877C187cd92</a>
         </span></p>
 	</section>
         <h5 ng-hide="curLang=='en'"> <i>🏅</i> <span translate="Translator_Desc"> Thank you to our translators </span></h5>
