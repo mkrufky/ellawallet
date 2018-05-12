@@ -4,5 +4,11 @@
     "symbol":"MINING",
     "decimal":18,
     "type":"default"
+  },
+  {
+    "address":"0x4aaad871293c4581edb580e99fb6613b0a3bc488",
+    "symbol":"DONATE",
+    "decimal":18,
+    "type":"default"
   }
 ]
