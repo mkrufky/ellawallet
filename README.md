@@ -21,8 +21,8 @@ MyEllaWallet is a free, open-source, client-side tool for easily & securely inte
     - tokenSymbol=[ARC | ICN | MKR | ....]
     - gasLimit=[number] OR gas=[number]
     - data=[hex data]
-    - Example 1: https://www.myetherwallet.com/?to=0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8&value=1&tokenSymbol=REP&gaslimit=50000#send-transaction
-    - Example 2: https://www.myetherwallet.com/?to=0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8&value=1&gaslimit=23000&data=0x5468616e6b20796f752c204d455720322e30#send-transaction
+    - Example 1: https://www.myetherwallet.com/?to=0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D&value=1&tokenSymbol=REP&gaslimit=50000#send-transaction
+    - Example 2: https://www.myetherwallet.com/?to=0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D&value=1&gaslimit=23000&data=0x5468616e6b20796f752c204d455720322e30#send-transaction
 
 
 
@@ -31,7 +31,7 @@ MyEllaWallet is a free, open-source, client-side tool for easily & securely inte
  - **Empower the people**: Give people the ability to interact with the Ethereum blockchain easily, without having to run a full node.
  - **Make it easy & free**: Everyone should be able to create a wallet and send Ether & Tokens without additional cost.
  - **People are the Priority**: People are the most important & their experience trumps all else. If monetization worsens the experience, we don't do it. (e.g. ads)
- - **A learning experience, too**: We want to educate about Ethereum, security, privacy, importance of controlling your own keys, how the blockchain works, and how Ethereum and blockchain technologies enable a better world.
+ - **A learning experience, too**: We want to educate about Ethereum, security, privacy, the importance of controlling your own keys, how the blockchain works, and how Ethereum and blockchain technologies enable a better world.
  - **If it can be hacked, it will be hacked**: Never save, store, or transmit secret info, like passwords or keys.
  - **Offline / Client-Side**: User should be able to run locally and offline without issue.
  - **Private**: No tracking!!! No emails. No ads. No demographics. We don't even know how many wallets have been generated, let alone who / what / where you are.
@@ -42,7 +42,7 @@ MyEllaWallet is a free, open-source, client-side tool for easily & securely inte
 
 ### Users (non-developers)
 
-- [It is recommended you start here.](https://myetherwallet.groovehq.com/knowledge_base/categories/getting-started-443)
+- [It is recommended you start here.](https://myetherwallet.github.io/knowledge-base/getting-started/getting-started-new.html)
 - You can run MyEtherWallet.com on your computer. You can create a wallet completely offline & send transactions from the "Offline Transaction" page.
 
 1. Go to https://github.com/kvhnuke/etherwallet/releases/latest.
@@ -67,8 +67,7 @@ If you want to help contribute, here's what you need to know to get it up and ru
 - Both the Chrome Extension and the MyEtherWallet.com are compiling from the same codebase. This code is found in the `app` folder. Don't touch the `dist` or `chrome-extension` folders.
 - We use angular and bootstrap. We used to use jQuery and Bootstrap until it was converted in April 2016. If you wonder why some things are set up funky, that's why.
 - The mercury branch is currently the active development branch. We then push the dist folder live to gh-pages, which then gets served to MyEtherWallet.com.
-- We use npm / gulp for compiling. There is a lot of stuff happening in the compliation.
-- Old node setups can be found in in `json_relay_node` (node.js) & `json_relay_php` (php). These are great resources for developers looking to get started and launch a public node on a $40 linode instance.
+- We use npm / gulp for compiling. There is a lot of stuff happening in the compilation.
 
 **Getting Started**
 
@@ -78,13 +77,13 @@ If you want to help contribute, here's what you need to know to get it up and ru
 
 **Folder Structure**
 - `fonts` and `images` get moved into their respective folders. This isn't watched via gulp so if you add an image or font, you need to run `gulp` again.
-- `includes` are the pieces of the pages / the pages themselves. These are pretty self explanatory and where you will make most frontend changes.
+- `includes` are the pieces of the pages / the pages themselves. These are pretty self-explanatory and where you will make most frontend changes.
 - `layouts` are the pages themselves. These basically take all the pieces of the pages and compile into one massive page. The navigation is also found here...sort of.
     * `index.html` is for MyEtherWallet.com.
     * `cx-wallet.html` is the main page for the Chrome Extension.
     * `embedded.html` is for https://www.myetherwallet.com/embedded.html.
 
-- You can control what shows up on MyEtherWallet.com vs the Chrome Extension by using: `@@if (site === 'cx' )  {  ...  }` and `@@if (site === 'mew' ) { ... }`. Check out `sendTransaction.tpl` to see it in action. The former will only compile to the Chrome Extension. The latter only to MyEtherWallet.com.
+- You can control what shows up on MyEtherWallet.com vs the Chrome Extension by using: `@@if (site === 'cx' )  {  ...  }` and `@@if (site === 'mew' ) { ... }`. Check out `sendTransaction.tpl` to see it in action. The former will only compile for the Chrome Extension. The latter only to MyEtherWallet.com.
 - `embedded.html` is for embedding the wallet generation into third-party sites. [Read more about it and how to listen for the address generated here.](https://www.reddit.com/r/ethereum/comments/4gn37o/embeddable_myetherwallet_super_simple_wallet/)
 - The wallet decrypt directives are at `scripts/directives/walletDecryptDrtv.js`. These show up on a lot of pages.
 - The navigation is in `scripts/services/globalServices.js`. Again, we control which navigation items show up in which version of the site in this single file.
